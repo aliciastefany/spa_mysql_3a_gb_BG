@@ -17,6 +17,7 @@ function App(){
 
     if(editando){
       await axios.put(`https://cuddly-fortnight-9w94wv4r4g6f95xp-3001.app.github.dev/alunos/${idAtual}`,aluno)
+      console.log(aluno)
       setEditando(false)
       setIdAtual(null)
     } else {
